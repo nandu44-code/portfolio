@@ -244,7 +244,7 @@
                                 <i class="las la-star"></i>
                                 <i class="las la-star"></i>
                             </div>
-                            <p class="my-3">eventhough he is not coming from an it background he caught up with me .That is quite impressive like  </p>
+                            <p class="my-3">eventhough he is not coming from an it background he caught up with me .That is quite impressive </p>
                             <div class="person">
                                 <h5 class="mb-0">athish</h5>
                                 <p class="mb-0">Twitter</p>
@@ -321,10 +321,10 @@
                     </div>
                     <div class="col-auto">
                         <div class="social-icons">
-                            <a href="https://www.instagram.com/"><i class="lab la-twitter"></i></a>
-                            <a href="https://www.instagram.com/"><i class="lab la-instagram"></i></a>
+                            <a href="https://twitter.com/gnair4_g?s=20"><i class="lab la-twitter"></i></a>
+                            <a href="https://instagram.com/n.4n.d.u?igshid=MzRlODBiNWFlZA=="><i class="lab la-instagram"></i></a>
                             
-                            <a href="https://github.com/"><i class="lab la-github"></i></a>
+                            <a href="https://github.com/nandu44-code"><i class="lab la-github"></i></a>
                         </div>
                     </div>
                 </div>
@@ -340,6 +340,30 @@
     <script src="./assets/js/bootstrap.bundle.min.js"></script>
     <script src="./assets/js/aos.js"></script>
     <script src="./assets/js/main.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
+ 
+  <!--form validation-->
+ <script>
+    $("#submit-form").submit((e)=>{
+        e.preventDefault()
+        $.ajax({
+            url:"https://script.google.com/macros/s/AKfycbzluEREq4iY9yNFInWjfFPrn0k0t7AXdIaChkjny_f-8N0HwfvZ-Bp4yXqs1p2F-LGE/exec",
+            data:$("#submit-form").serialize(),
+            method:"post",
+            success:function (response){
+                alert("Form submitted successfully")
+                window.location.reload()
+                //window.location.href="https://google.com"
+            },
+            error:function (err){
+                alert("Something Error")
+
+            }
+        })
+    })
+</script>
 </body>
 
 </html>
